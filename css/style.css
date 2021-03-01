@@ -1,0 +1,272 @@
+/**********************************
+ * TITLE: Gila Screen Stylesheet  * 
+ * URI  : gila/gila-screen.css    *
+ * MODIF: 2003-Apr-30 19:09 +0800 *
+ **********************************/
+
+
+/* ##### Common Styles ##### */
+
+body {
+    color: #ECF0F1;
+    background-color: #2C3E50;
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 73%;  /* Enables font size scaling in MSIE */
+    margin: 0;
+    padding: 0;
+  }
+  
+  html > body {
+    font-size: 9pt;
+  }
+  
+  acronym, .titleTip {
+    border-bottom: 1px dotted rgb(168,140,83);
+    cursor: help;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .doNotDisplay {
+    display: none !important;
+  }
+  
+  
+  .smallCaps {
+    font-size: 117%;
+    font-variant: small-caps;
+  }
+  
+  
+  /* ##### Header ##### */
+  
+  #header {
+    color: inherit;
+  }
+  
+  .headerTitle {
+    margin: 0;
+    padding: 0.25em 4mm 0.25em 4mm;
+    font-size: 200%; 
+    font-style: italic;
+    color: #F5EBE9;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .subHeader {
+    color: #2C3E50;
+    background-color: #E74C3C;
+    font-size: 109%;
+    text-align: center;
+    margin: 0;
+    padding: 0.5ex 0;
+  }
+  
+  .subHeader a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 1ex;
+  }
+  
+  .subHeader a:hover {
+    color: #2C3E50;
+    background-color: #F5EBE9;
+  }
+  
+  /* ##### Right Side Bar ##### */
+  
+  .rightSideBar {
+    color: #2C3E50;
+    width: 13em;
+    margin: 2ex 0.75ex 0 0;
+    padding: 0;
+    float: right;
+    clear: right;
+    border: 1px solid #E74C3C;
+  }
+  
+  [class~="rightSideBar"] {
+    margin-right: 1.5ex;
+  }
+  
+  .rightSideBar .sideBarTitle {
+    color: #F5EBE9;
+    background-color: #E74C3C;
+    font-weight: bold;
+    margin: 1.25ex 1ex;
+    padding: 0.9ex 1ex;
+  }
+  
+  .rightSideBar a {
+    color: #2C3E50;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .rightSideBar a:hover {
+    text-decoration: none;
+  }
+  
+  .rightSideBar .sideBarText {
+    line-height: 0.5em;
+    margin: 0;
+    padding: 0 2ex 1em 2ex;
+  }
+  
+  .rightSideBar .more {
+    text-decoration: none;
+    text-align: right;
+    margin: 0;
+    padding: 0 2ex 1em 2ex;
+    display: block;
+  }
+  
+  .rightSideBar .more:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ##### Main Copy ##### */
+  
+  #main-copy {
+    color: #2C3E50;
+    background-color: #ECF0F1;
+    text-align: justify;
+    line-height: 1.5em;
+    
+    padding: 0.5ex 15em 1em 1em;
+    border-left: 1px solid #E74C3C;
+  }
+  
+  #main-copy h1 {
+    color: #3498DB;
+    background-color: transparent;
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 175%;
+    font-weight: bold;
+    text-align: left;
+    margin: 1em 0 0 0;
+    padding: 1em 0 0 0;
+    border-top: 1px solid #E74C3C;
+  }
+  
+  #main-copy a {
+    color: #3498DB;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  #main-copy a:hover {
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 1em 0 1.5em 0;
+    padding: 0;
+  }
+  
+  dt {
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0.5ex 0;
+  }
+  
+  dd {
+    margin: 0 0 1.5em 1.5em;
+    padding: 0;
+  }
+  
+  
+  /* ##### Footer ##### */
+  
+  #footer {
+    color: #2C3E50;
+    background-color: #E74C3C;
+    font-size: 92%;
+    text-align: center;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 1em 4mm 1em 4mm;
+    clear: both;
+  }
+  
+  #footer div {
+    margin: 0;
+    padding: 0 0 1ex 0;
+  }
+  
+  #footer a {
+    color: #2C3E50;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  #footer a:hover {
+    text-decoration: none;
+  }
+
+   /* ##### Forms ##### */
+  textarea {
+    width: 600px;
+    height: 120px;
+  }
+
+   input[type="text"],
+   input[type="password"] {
+     display: block;
+     margin-bottom: 20px;
+     padding: 4px;
+     border: none;
+     border-bottom: 1px solid #AAA;
+     font-family: 'Roboto', sans-serif;
+     transition: 0.2s ease;
+   }
+   
+   input[type="text"]:focus,
+   input[type="password"]:focus {
+     border-bottom: 2px solid #2C3E50;
+     color: #2C3E50;
+     transition: 0.2s ease;
+   }
+   
+   input[type="submit"] {
+     margin-left: 6.5px;
+     width: 120px;
+     height: 32px;
+     background: #2980B9;
+     border: none;
+     border-radius: 2px;
+     color: #FFF;
+     font-family: 'Roboto', sans-serif;
+     text-transform: uppercase;
+     transition: 0.1s ease;
+     cursor: pointer;
+   }
+   
+   input[type="submit"]:hover,
+   input[type="submit"]:focus {
+     opacity: 0.8;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+     transition: 0.1s ease;
+   }
+   
+   input[type="submit"]:active {
+     opacity: 1;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+     transition: 0.1s ease;
+   }
+   button {
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+}
